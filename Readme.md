@@ -1,7 +1,7 @@
 dglOpenGL
 =========
 
-GitHub fork of the dglOpenGL header translation.
+GitHub fork of the dglOpenGL header translation. The header is mostly kept as it is, except for removing deprecated stuff and extracting compiler defines to an external include file (dglOpenGL.inc).
 
 The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 
@@ -9,13 +9,13 @@ The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 ## Delphi / Pascal OpenGL header translation
 
 - OpenGL version 4.5
-- Header revision 4.5a
+- Header revision 4.5a (GitHub Fork)
 - Copyright (C) DGL-OpenGL-Portteam -  All Rights Reserved
 - Last update : 2014-12-06
-- Last updater : Sascha Willems
+- Last updater : Sascha Willems (OpenGL API)
 
 ## Supported environments and targets
-- (Win32) Delphi 4 and up
+- (Win32) Delphi 7 and up (the original project supports down to Delphi 4)
 - (Win32, Win64) Delphi XE2
 - (Win32, Win64, Linux, MacOSX) FreePascal (1.9.3 and up)
 

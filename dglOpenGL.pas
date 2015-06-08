@@ -1,7 +1,7 @@
 { ============================================================================
 
-       OpenGL 4.5 - Headertranslation (GitHub Fork)
-       Version 4.5a (GitHub Fork)
+       OpenGL 4.5 - Headertranslation (Personal Fork)
+       Version 4.5a (Personal Fork)
 
        Supported environments and targets :
         - (Win32) Delphi 7 and up
@@ -18368,44 +18368,44 @@ begin
   FillChar(PFDescriptor, SizeOf(PFDescriptor), 0);
 
   with PFDescriptor do
-    begin
-      nSize    := SizeOf(PFDescriptor);
-      nVersion := 1;
-      dwFlags  := PFD_SUPPORT_OPENGL;
-      AType    := GetObjectType(DC);
+  begin
+    nSize    := SizeOf(PFDescriptor);
+    nVersion := 1;
+    dwFlags  := PFD_SUPPORT_OPENGL;
+    AType    := GetObjectType(DC);
 
-      if AType = 0 then
-        RaiseLastOSError;
+    if AType = 0 then
+      RaiseLastOSError;
 
-      if AType in MemoryDCs then
-        dwFlags := dwFlags or PFD_DRAW_TO_BITMAP
+    if AType in MemoryDCs then
+      dwFlags := dwFlags or PFD_DRAW_TO_BITMAP
+    else
+      dwFlags := dwFlags or PFD_DRAW_TO_WINDOW;
+
+    if opDoubleBuffered in Options then
+      dwFlags := dwFlags or PFD_DOUBLEBUFFER;
+
+    if opGDI in Options then
+      dwFlags := dwFlags or PFD_SUPPORT_GDI;
+
+    if opStereo in Options then
+      dwFlags := dwFlags or PFD_STEREO;
+
+    iPixelType   := PFD_TYPE_RGBA;
+    cColorBits   := ColorBits;
+    cDepthBits   := zBits;
+    cStencilBits := StencilBits;
+    cAccumBits   := AccumBits;
+    cAuxBuffers  := AuxBuffers;
+
+    if Layer = 0 then
+      iLayerType := PFD_MAIN_PLANE
+    else
+      if Layer > 0 then
+        iLayerType := PFD_OVERLAY_PLANE
       else
-        dwFlags := dwFlags or PFD_DRAW_TO_WINDOW;
-
-      if opDoubleBuffered in Options then
-        dwFlags := dwFlags or PFD_DOUBLEBUFFER;
-
-      if opGDI in Options then
-        dwFlags := dwFlags or PFD_SUPPORT_GDI;
-
-      if opStereo in Options then
-        dwFlags := dwFlags or PFD_STEREO;
-
-      iPixelType   := PFD_TYPE_RGBA;
-      cColorBits   := ColorBits;
-      cDepthBits   := zBits;
-      cStencilBits := StencilBits;
-      cAccumBits   := AccumBits;
-      cAuxBuffers  := AuxBuffers;
-
-      if Layer = 0 then
-        iLayerType := PFD_MAIN_PLANE
-      else
-        if Layer > 0 then
-          iLayerType := PFD_OVERLAY_PLANE
-        else
-          iLayerType := Byte(PFD_UNDERLAY_PLANE);
-    end;
+        iLayerType := Byte(PFD_UNDERLAY_PLANE);
+  end;
 
   PixelFormat := ChoosePixelFormat(DC, @PFDescriptor);
 

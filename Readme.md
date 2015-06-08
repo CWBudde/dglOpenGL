@@ -1,3 +1,11 @@
+dglOpenGL
+=========
+
+GitHub fork of the dglOpenGL header translation.
+
+The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
+
+
 # Delphi / Pascal OpenGL header translation
 
 - OpenGL version 4.5

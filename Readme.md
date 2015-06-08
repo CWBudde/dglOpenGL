@@ -6,7 +6,7 @@ GitHub fork of the dglOpenGL header translation.
 The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 
 
-# Delphi / Pascal OpenGL header translation
+## Delphi / Pascal OpenGL header translation
 
 - OpenGL version 4.5
 - Header revision 4.5a
@@ -14,16 +14,16 @@ The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 - Last update : 2014-12-06
 - Last updater : Sascha Willems
 
-# Supported environments and targets
+## Supported environments and targets
 - (Win32) Delphi 4 and up
 - (Win32, Win64) Delphi XE2
 - (Win32, Win64, Linux, MacOSX) FreePascal (1.9.3 and up)
 
-# Obtained through
+## Obtained through
 - Bitbucket source repository - https://bitbucket.org/saschawillems/dglopengl
 - Delphi OpenGL Community(DGL) - www.delphigl.com
 
-# Credits
+## Credits
 - Converted and maintained by DGL's OpenGL-Portteam :
     - Sascha Willems             - http://www.saschawillems.de
     - Steffen Xonna (Lossy eX)   - http://www.dev-center.de
@@ -35,7 +35,7 @@ The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 - Additional thanks:
     - sigsegv (libdl.so)
 
-# License
+## License
 > You may retrieve the latest version of this file at the Delphi OpenGL
 > Community home page, located at http://www.delphigl.com/
 > The contents of this file are used with permission, subject to
@@ -51,41 +51,41 @@ The original project is hosted on https://bitbucket.org/saschawillems/dglopengl
 
 > Note : If you want to use our header for projects whose licensing is not compatible with the MPL, just ask for a changed license!
 
-# History
+## History
  
-# Version 1.0    
+## Version 1.0    
 - Initial Release
  
-# Version 1.1    
+## Version 1.1    
 - Added PPointer in Tpyessection for compatiblity with Delphi versions lower than 7                                    (SW)
 Added a function named RaiseLastOSError including a comment
 - on how to make it run under Delphi versions lower than 7 (SW)
 - Added some data types according to the GL-Syntax         (SW)
 
-# Version 1.2    
+## Version 1.2    
 - Fixed some problems with getting the addresses of some
 - Extensions (e.g. glTexImage3D) where the EXT/ARB did work
 - but not the core-functions                               (SW)
  				
-# Version 1.3    
+## Version 1.3    
 - A second call to ReadimplementationProperties won't
 - revert to the default libs anymore                       (MW)
 - Libraries now will be released if necessary              (MW)
  				
-# Version 1.3a   
+## Version 1.3a   
 - Small fixes for glSlang-functions                        (SW)
   
-# Version 1.3b   
+## Version 1.3b   
 - Fixed a small bug with GL_ARB_shader_objects, that lead to that extension not loaded correctly              (SW)
  				
-# Version 1.3c   
+## Version 1.3c   
 - more GL 1.5 compliance by FOG_COORD_xx and
 - ARB less VBO and occlusion query routines                (MW)
  				
-# Version 1.3d   
+## Version 1.3d   
 - Fixed linebreaks (should now be corrected under D5)      (SW)
   
-# Version 1.4    
+## Version 1.4    
 - Changed header to correspond to the OpenGL-Shading
 - Language specification 1.10 :
 - Added new GL_SAMPLER_*-Constants
@@ -93,21 +93,21 @@ Added a function named RaiseLastOSError including a comment
 - Added Constant GL_FRAGMENT_SHADER_DERIVATIVE_HINT_ARB
 - Added Constant GL_MAX_FRAGMENT_UNIFORM_COMPONENTS_ARB  (SW)
  
-# Version 1.4a   
+## Version 1.4a   
 - Fixed a missing stdcall for glBindAttribLocationARB      (SW)
   
-# Version 1.4b   
+## Version 1.4b   
 - Fixed declaration for glUniform*(f/i)vARB (added count)  (MW)
 - glCompileShaderARB changed from function to procedure    (MW)
  				
-# Version 1.5    
+## Version 1.5    
 - Added support for FreePascal                             (BR)
 - Added type TGLVectorf3/TGLVector3f                       (SW)
  
-# Version 1.6    
+## Version 1.6    
 - Added Extension GL_EXT_framebuffer_object                (SX)
   
-# Version 1.7    
+## Version 1.7    
 - Added Extension GL_ARB_fragment_program_shadow           (SX)
 - Added Extension GL_ARB_draw_buffers                      (SX)
 - Added Extension GL_ARB_texture_rectangle                 (SX)
@@ -125,7 +125,7 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension GL_NV_vertex_program2_option             (SX)
 - Added Extension GL_NV_vertex_program3                    (SX)
  				
-# Version 1.8    
+## Version 1.8    
 - Added explicit delegate type definitions                 (LM)
 - Added .Net 1.1 Support                                   (LM)
 - Added .Net overloaded functions                          (LM)
@@ -133,7 +133,7 @@ Added a function named RaiseLastOSError including a comment
 - Added automatic InitOpenGL call in CreateRenderingContext(LM)
 - Added extra Read_* function                              (LM)
  				
-# Version 2.0    
+## Version 2.0    
 - fixed some Problem with version string and damn drivers.
 - String 1.15 identified as OpenGL 1.5 not as OpenGL 1.1   (SX)
 - Removed unexisting extension GL_ARB_texture_mirror_repeat(SX)
@@ -150,14 +150,14 @@ Added a function named RaiseLastOSError including a comment
 - different type for .net                                  (SX)
 - Added OpenGL 2.0 Core                                    (SX)
  				
-# Version 2.0.1  
+## Version 2.0.1  
 - fixed some problems with glGetActiveAttrib in 2.0 Core   (SX)
 - fixes some problems with gluProject                      (SX)
 - fixes some problems with gluUnProject                    (SX)
 - fixes some problems with gluTessVertex                   (SX)
 - fixes some problems with gluLoadSamplingMatrices         (SX)
  				
-# Version 2.1    
+## Version 2.1    
 - Removed .NET Support                                     (SX)
 - Better support for Linux                                 (SX)
 - Better Codeformation                                     (SX)
@@ -191,7 +191,7 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension GL_NV_transform_feedback                 (SX)
 - Added Extension GL_NV_vertex_program4                    (SX)
  				
-# Version 3.0    
+## Version 3.0    
 - fixed some const of GL_EXT_texture_shared_exponent       (SX)
 - possible better support for mac                          (SX)
 - Added OpenGL 3.0 Core                                    (SX)
@@ -226,13 +226,13 @@ Added a function named RaiseLastOSError including a comment
 - dglCheckExtension added to check if an extension exists  (SX)
 - Read_GL_ARB_buffer_object renamed to Read_GL_ARB_vertex_buffer_object                         (SX)
  				
-# Version 3.0.1  
+## Version 3.0.1  
 - fixed an problem with fpc                                (SX)
   
-# Version 3.0.2  
+## Version 3.0.2  
 - fixed an problem with WGL_ARB_create_context             (SX)
   
-# Version 3.2    
+## Version 3.2    
 - Functions from GL_VERSION_3_0 where updated              (SX)
 - Functions from GL_ARB_map_buffer_range where updated     (SX)
 - Functions from GL_NV_present_video where added           (SX)
@@ -288,10 +288,10 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension GLX_EXT_framebuffer_sRGB                 (SX)
 - Added Extension GLX_EXT_texture_from_pixmap              (SX)
  				
-# Version 3.2.1  
+## Version 3.2.1  
 - Fixed some problems with Delphi < 6                      (SX)
   
-# Version 3.2.2  
+## Version 3.2.2  
 - Added Extension GL_APPLE_rgb_422                         (SX)
 - Added Extension GL_EXT_separate_shader_objects           (SX)
 - Added Extension GL_NV_video_capture                      (SX)
@@ -307,12 +307,12 @@ Added a function named RaiseLastOSError including a comment
 - WGL_NV_video_out now named WGL_NV_video_output           (SX)
 - Added Extension GLX_EXT_swap_control                     (SX)
  				
-# Version 3.2.3  
+## Version 3.2.3  
 - Fixed an Problem with glGetAttribLocation                (SX)
 - Added const GL_UNIFORM_BUFFER_EXT                        (SX)
 - Functions of GL_NV_texture_barrier now will be loaded    (SX)
  				
-# Version 4.0    
+## Version 4.0    
 - Changes on Extension GL_ARB_texture_gather               (SX)
 - Changes on Extension GL_NV_shader_buffer_load            (SX)
 - Added OpenGL 3.3 Core                                    (SX)
@@ -339,7 +339,7 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension GL_ARB_transform_feedback2               (SX)
 - Added Extension GL_ARB_transform_feedback3               (SX)
 				
-# Version 4.1   
+## Version 4.1   
 - Possible fix some strange linux behavior                 (SX)
 - All function uses GL instead of TGL types                (SX)
 - GL_AMD_vertex_shader_tesselator will be read now         (SX)
@@ -398,10 +398,10 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension GLX_ARB_create_context_robustness        (SX)
 - Added Extension GLX_EXT_create_context_es2_profile       (SX)
 				
-# Version 4.1a   
+## Version 4.1a   
 - Fix for dglGetProcAddress with FPC and linux (def param) (SW)
  
-# Version 4.2    
+## Version 4.2    
 - Added OpenGL 4.2 Core                                    (SW)
 - Added Extension GL_ARB_base_instance                     (SW)
 - Added Extension GL_ARB_shading_language_420pack          (SW)
@@ -417,10 +417,10 @@ Added a function named RaiseLastOSError including a comment
 - Added Extension WGL_NV_DX_interop                        (SW)
 - Added Define for WGL_EXT_create_context_es2_profile      (SW)
 				
-# Version 4.2a   
+## Version 4.2a   
 - Added Mac OS X patch by Andrey Gruzdev                   (SW)
  
-# Version 4.3    
+## Version 4.3    
 - Added OpenGL 4.3 Core                                    (SW)
 - Added GL_ARB_arrays_of_arrays		                     (SW)
 - Added GL_ARB_fragment_layer_viewport                     (SW)
@@ -455,7 +455,7 @@ Added a function named RaiseLastOSError including a comment
 - Added GL_AMD_query_buffer_object                         (SW)
 - Added CreateRenderingContextVersion                      (SW)
 				
-# Version 4.4    
+## Version 4.4    
 - Added OpenGL 4.4 Core                                    (SW)
 - Added ARB_buffer_storage                                 (SW)
 - Added ARB_clear_texture extension                        (SW)
@@ -471,7 +471,7 @@ Added a function named RaiseLastOSError including a comment
 - (thanks to frenK)                                        (SW)
 - Added missing cdecl for TglXGetVisualFromFBConfig        (SW)
 				
-# Version 4.5    
+## Version 4.5    
 - Added OpenGL 4.5 Core                                    (SW)
 - Added GL_ARB_ES3_1_compatibility                         (SW)
 - Added GL_ARB_clip_control                                (SW)
@@ -490,7 +490,7 @@ Added a function named RaiseLastOSError including a comment
 - Added GLX_ARB_context_flush_control                      (SW)
 - Added WGL_ARB_context_flush_control                      (SW)
 
-# Version 4.5a
+## Version 4.5a
 - Changed declarations of GL_TRUE/GL_FALSE for compatbility with ByteBool (SW)
 - Changed declarations of GLU_TRUE/GLU_FALSE for compatbility with ByteBool (SW)
 - Added Exception mask settings for 64-Bit (SetExceptionMask) (SW)
